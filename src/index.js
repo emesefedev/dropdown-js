@@ -1,3 +1,9 @@
 import "./style.css";
 
-console.log("Hello");
+const dropdownButton = () => document.getElementById("dropdown-button");
+
+window.addEventListener("load", () => {
+  dropdownButton().addEventListener("click", () => {
+    console.log("Show / Hide options");
+  });
+});
