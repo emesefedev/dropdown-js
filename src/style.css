@@ -21,7 +21,11 @@ p {
 }
 
 #dropdown {
-    width: 15vw;
+
+    position: relative;
+    display: inline-block;
+    
+    width: 15vw; 
 }
 
 #dropdown-button {
@@ -47,17 +51,21 @@ p {
     flex-direction: column;
     justify-content: flex-start;
 
-    gap: 8px;
-
     width: 100%;
 
-    margin-top: 8px;
+    position: absolute;
+    z-index: 10;
 }
 
 .dropdown-option {
     color: var(--color-light);
 
+    background-color: var(--color-darker);
+    opacity: .75;
+
     text-align: center;
+
+    padding: 8px;
 }
 
 .dropdown-option:hover {
